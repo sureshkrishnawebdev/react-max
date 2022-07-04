@@ -1,2 +1,6 @@
 # react-max
 react-beginner
+
+This is a new repo for xploring react library into pieces...
+
+Please find the Reference folder -- for detailed journey...
