@@ -71,17 +71,3 @@ Reason:
 -------
 
 =============================================================================================
-4. 'ExpenseDate' is not defined - import -- Failed to compile
-    Attempted import error: './ExpenseDate' does not contain a default export (imported as 'ExpenseDate'). - export -- Failed to compile
-----------------------------------------------------
-
-Cause: when we failed to import/ export our custom component
------
-     <ExpenseDate />
-
-Resolution: import/ export your custom component
------------
-  import ExpenseDate from './ExpenseDate';
-  or 
-  export default ExpenseDate;
-=============================================================================================
