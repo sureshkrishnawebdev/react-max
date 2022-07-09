@@ -35,4 +35,21 @@ Please make sure you are rendering one single entity.
 
 https://stackoverflow.com/questions/58841349/jsx-expressions-must-have-one-parent-element
 https://reactjs.org/docs/fragments.html
+
+=============================================================================================
+2. ./src/components/expense/ExpenseItem.scss (./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!./node_modules/postcss-loader/src??postcss!./node_modules/resolve-url-loader??ref--5-oneOf-6-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./src/components/expense/ExpenseItem.scss)
+    ---------------------------------------------------------------------
+
+Cause:  on Importing scss file - we get above error. But it is not happening eith .css file
+-----
+import './ExpenseItem.scss';
+
+Resolution:
+------------
+npm install node-sass -- deprecated
+npm install sass
+
+Reason:
+-------
+
 =============================================================================================

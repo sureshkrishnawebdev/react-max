@@ -1,4 +1,6 @@
-
+import React from 'react';
+// import './ExpenseItem.css';     // no external library required
+import './ExpenseItem.scss';    // external library required
 
 const ExpenseItem = () => {
 
