@@ -2,11 +2,18 @@
     - Its a syntax provided by React team to return html elements in an declarative way using js.
     - parent container - every jsx synatx must return only one parent container/element - (div/fragments)
     - dynamic data -- JSX provides - dynamic placeholders - 'curly brackets wraped around variable name/ expresssions' -- { varName/ expressions }
+    - styling -- we need to declare css selector classes using - 'className' instead of 'class'
        
 1.2. custom component
     - Naming -- Always name custom component with Camelcase or it should start with captial letter
              -- react considers 
                 - lowercase - as in-built html elements
                 - uppercase - as custom components
+    - practise -- It's better to import React from 'react' - bcz it supports JSX syntax -- backward compatibility for < v.18 
+    - Data transfer -- we use props 
+        - whihc is one single parameter that holds all the data(arguments) from parent 
+        - It's similar to normal js fns -- where we communicate btw fns via - arguments & params 
+        - in the end components are nothing but fns in react - we apply same rule but slight chnage in syntax
+        
 
 
