@@ -1,0 +1,4 @@
+1.1. JSX 
+    - Its a syntax provided by React team to return html elements in an declarative way using js.
+    - every jsx synatx must return only one parent container/element - (div/fragments)
+    
