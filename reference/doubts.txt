@@ -1,4 +1,7 @@
 1. no-script tag
 2. create-react-app - adv, disadv, alternatives
 3. how to use objects inside jsx
-4. 
+4. how to have locale date specific to user
+5. dateObject .getdate, .getmonth, year... vs localeString( locale, options)
+6. locale for India -en-IN , en-US -- which should be used for global market(pan world)
+7. 
