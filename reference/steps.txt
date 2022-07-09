@@ -10,7 +10,8 @@
     1.5. pass data - between components --> use props 
         1.5.1. @source a.k.a Parent --> attributes(key) + hardcoded/{var}(value)
         1.5.2. @destination a.k.a child... 
-            --> props as label i.e. parameter in child fn 
-            --> props.attribute name specified at source - Custom
-            --> props.children -- used when we required to use content inside our custom tag
-            --> props.className -- used when we required to use content inside our custom tag    
+            1--> props as label i.e. parameter in child fn 
+            2--> props.attribute name specified at source - Custom
+            3--> spliting components - multi level data passing using props.
+            4--> props.children -- used when we required to use content inside our custom tag
+            5--> props.className -- used when we required to use content inside our custom tag    
