@@ -1,3 +1,4 @@
 1. no-script tag
 2. create-react-app - adv, disadv, alternatives
-3. 
+3. how to use objects inside jsx
+4. 

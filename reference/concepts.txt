@@ -1,6 +1,7 @@
 1.1. JSX 
     - Its a syntax provided by React team to return html elements in an declarative way using js.
     - parent container - every jsx synatx must return only one parent container/element - (div/fragments)
+    - dynamic data -- JSX provides - dynamic placeholders - 'curly brackets wraped around variable name/ expresssions' -- { varName/ expressions }
        
 1.2. custom component
     - Naming -- Always name custom component with Camelcase or it should start with captial letter

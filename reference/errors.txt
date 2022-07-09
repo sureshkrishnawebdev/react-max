@@ -53,3 +53,21 @@ Reason:
 -------
 
 =============================================================================================
+3. Uncaught Error: Objects are not valid as a React child (found: [object Date]). 
+    If you meant to render a collection of children, use an array instead.
+     ---------------------------------------------------------------------
+
+Cause: Using object inside the jsx 
+-----
+    const expenseDate = new Date(7, 7, 2022);
+    <div> { expenseDate } </div>
+
+Resolution: converted object to string 
+-----------
+    const expenseDate = new Date(7, 7, 2022).toISOString();
+    <div> { expenseDate } </div>
+
+Reason:
+-------
+
+=============================================================================================

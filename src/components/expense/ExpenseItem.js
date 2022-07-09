@@ -4,12 +4,16 @@ import './ExpenseItem.scss';    // external library required
 
 const ExpenseItem = () => {
 
+    const expenseDate = new Date(7, 7, 2022).toISOString();
+    const expenseTitle = 'React - The Complete Guide (incl Hooks, React Router, Redux)';
+    const expenseAmount = 450;
+
     return (
         <div className="expense-item">
-            <div> 07 July 2022 </div>
+            <div> { expenseDate } </div>
             <div className="expense-item__description">
-                <h2> Udemy </h2>
-                <div className="expense-item__price"> $10 </div>
+                <h2> { expenseTitle } </h2>
+                <div className="expense-item__price"> ${ expenseAmount } </div>
             </div>
         </div>
     )
