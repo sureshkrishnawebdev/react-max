@@ -1,0 +1,5 @@
+1. locale 
+https://www.w3schools.com/jsref/jsref_tolocalestring.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString
+https://www.localeplanet.com/icu/en-IN/index.html
+

@@ -1,0 +1,73 @@
+1. JSX expressions must have one parent element ( JSX )
+-----------------------------------------------
+Cause:
+------
+<div>
+    <h2>Let's get started!</h2>
+</div>
+<div> test </div>
+
+Resolution:
+-----------
+1. Either we can wrap using - '<div>'
+2. or wrap using - '<React.Fragment>' -- pending
+
+1. Either we can wrap using - 'div' 
+    <div>
+        <h2>Let's get started!</h2>
+        <div> test </div>
+    </div>
+-- not recommended as it may add overhead for some scenarios(th(parent), div(child-parent-contatiner), td(child))
+
+2. or wrap using - 
+'<React.Fragment>' ||
+ <Fragment></Fragment> ||
+ shorthand - '<></>' ||
+ keyed fragments -  {props.items.map(item => ( <React.Fragment key={item.id}>  ...  
+
+-- A common 'pattern' in React is for a component to 'return multiple elements'.
+Fragments let you group a list of children 'without adding extra nodes to the DOM'.
+
+Reason: 
+-------
+Bcz a fn can return only one item. similarly in jsx we're returning parent container to react library.
+Please make sure you are rendering one single entity.
+
+https://stackoverflow.com/questions/58841349/jsx-expressions-must-have-one-parent-element
+https://reactjs.org/docs/fragments.html
+
+=============================================================================================
+2. ./src/components/expense/ExpenseItem.scss (./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!./node_modules/postcss-loader/src??postcss!./node_modules/resolve-url-loader??ref--5-oneOf-6-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./src/components/expense/ExpenseItem.scss)
+    ---------------------------------------------------------------------
+
+Cause:  on Importing scss file - we get above error. But it is not happening eith .css file
+-----
+import './ExpenseItem.scss';
+
+Resolution:
+------------
+npm install node-sass -- deprecated
+npm install sass
+
+Reason:
+-------
+
+=============================================================================================
+3. Uncaught Error: Objects are not valid as a React child (found: [object Date]). 
+    If you meant to render a collection of children, use an array instead.
+     ---------------------------------------------------------------------
+
+Cause: Using object inside the jsx 
+-----
+    const expenseDate = new Date(7, 7, 2022);
+    <div> { expenseDate } </div>
+
+Resolution: converted object to string 
+-----------
+    const expenseDate = new Date(7, 7, 2022).toISOString();
+    <div> { expenseDate } </div>
+
+Reason:
+-------
+
+=============================================================================================
