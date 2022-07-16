@@ -13,4 +13,4 @@
             --> props as label i.e. parameter in child fn 
             --> props.attribute name specified at source - Custom
             --> props.children -- used when we required to use content inside our custom tag
-            --> props.className -- used when we required to use content inside our custom tag    
+            --> props.className -- used when we required to use class

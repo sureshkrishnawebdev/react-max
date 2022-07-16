@@ -11,7 +11,7 @@
                 - uppercase - as custom components
     - practise -- It's better to import React from 'react' - bcz it supports JSX syntax -- backward compatibility for < v.18 
     - Data transfer -- we use props 
-        - whihc is one single parameter that holds all the data(arguments) from parent 
+        - whihc is one single parameter that holds all the data(arguments) from parent. (i.e. somewhat similar to ...rest operator) 
         - It's similar to normal js fns -- where we communicate btw fns via - arguments & params 
         - in the end components are nothing but fns in react - we apply same rule but slight chnage in syntax
         
