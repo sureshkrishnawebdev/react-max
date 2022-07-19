@@ -1,0 +1,5 @@
+/////////// ROUTES /////////////////
+0. Installation -- To setup route we're going to use - react-router-dom@5 package
+1. Creating routes for page
+    1.1. define route
+    1.2. activate route
