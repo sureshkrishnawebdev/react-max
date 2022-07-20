@@ -1,19 +1,13 @@
-1.1. JSX 
-    - Its a syntax provided by React team to return html elements in an declarative way using js.
-    - parent container - every jsx synatx must return only one parent container/element - (div/fragments)
-    - dynamic data -- JSX provides - dynamic placeholders - 'curly brackets wraped around variable name/ expresssions' -- { varName/ expressions }
-    - styling -- we need to declare css selector classes using - 'className' instead of 'class'
-       
-1.2. custom component
-    - Naming -- Always name custom component with Camelcase or it should start with captial letter
-             -- react considers 
-                - lowercase - as in-built html elements
-                - uppercase - as custom components
-    - practise -- It's better to import React from 'react' - bcz it supports JSX syntax -- backward compatibility for < v.18 
-    - Data transfer -- we use props 
-        - whihc is one single parameter that holds all the data(arguments) from parent 
-        - It's similar to normal js fns -- where we communicate btw fns via - arguments & params 
-        - in the end components are nothing but fns in react - we apply same rule but slight chnage in syntax
+/////////// ROUTES /////////////////
+0. Installation -- To setup route we're going to use - react-router-dom@5 package
+1. Creating routes for page
+    1.1. define route
+    1.2. activate route
+    1.3. linking our route with links
+        1.3.1. using default href 
+        1.3.2. using Link - replacement of default
+        1.3.3. using NavLink - addon with Link + shows activated route
+        1.3.4. using Redirect - used mainly for landing page with domain name it redirects to specified route
+        1.3.5. using exact  - allows us to have multiple isolated pages/routes with same base route + helps for dynamic routes
+        1.3.6. using Switch - - it solves FIFO approach of routes - it exists the route tree when it come across 1st match
         
-
-
