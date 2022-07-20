@@ -1,10 +1,11 @@
 import React, { Fragment } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Redirect, Switch } from 'react-router-dom';
 
-// Components
+// Components - pages
 import Home from './pages/Home';
 import ExpenseTracker from './pages/ExpenseTracker';
 import FoodApp from './pages/FoodApp';
+// Components - Navigation
 import MainHeader from './components/Layout/MainHeader';
 
 function App() {
@@ -12,15 +13,20 @@ function App() {
 	  <Fragment>
 		  	<MainHeader />
 		<main>
-			<Route path="/home">
-				<Home />
-			</Route>
-			<Route path="/expense-tracker">
-				<ExpenseTracker />
-			</Route>
-			<Route path="/food-app">
-				<FoodApp />
-			</Route>
+			<Switch>
+				<Route path="/" exact>
+					<Redirect to="/home" />
+				</Route>
+				<Route path="/home">
+					<Home />
+				</Route>
+				<Route path="/expense-tracker">
+					<ExpenseTracker />
+				</Route>
+				<Route path="/food-app">
+					<FoodApp />
+				</Route>
+			</Switch>
 		</main>
 	  </Fragment>
 	);
