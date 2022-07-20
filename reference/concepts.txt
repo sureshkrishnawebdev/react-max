@@ -3,3 +3,7 @@
 1. Creating routes for page
     1.1. define route
     1.2. activate route
+    1.3. linking our route with links
+        1.3.1. using default href 
+        1.3.2. using Link
+        1.3.3. using NavLink
