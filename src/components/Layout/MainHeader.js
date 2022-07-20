@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MainHeader1 = () => {
     return (
@@ -6,13 +7,13 @@ const MainHeader1 = () => {
             <nav>
                 <ul>
                     <li>
-                        <a href="/home"> Home </a>
+                        <Link to="/home"> Home </Link>
                     </li>
                     <li>
-                        <a href="/expense-tracker"> ExpenseTracker </a>
+                        <Link to="/expense-tracker"> ExpenseTracker </Link>
                     </li>
                     <li>
-                        <a href="/food-app"> FoodApp </a>
+                        <Link to="/food-app"> FoodApp </Link>
                     </li>
                 </ul>
             </nav>
