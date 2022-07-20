@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Redirect, Switch } from "react-router-dom";
 import MainHeader from './components/Layout/MainHeader';
 import ExpenseTracker from "./pages/ExpenseTracker";
 import FoodApp from "./pages/FoodApp";
@@ -10,15 +10,20 @@ function App() {
 		<React.Fragment>
 			<MainHeader />
 			<main>
-				<Route path="/home">
-					<Home />
-				</Route>
-				<Route path="/expense-tracker">
-					<ExpenseTracker />
-				</Route>
-				<Route path="/food-app">
-					<FoodApp />
-				</Route>
+				<Switch>
+					<Route path="/" exact>
+						<Redirect to="/home" />
+					</Route>
+					<Route path="/home">
+						<Home />
+					</Route>
+					<Route path="/expense-tracker">
+						<ExpenseTracker />
+					</Route>
+					<Route path="/food-app">
+						<FoodApp />
+					</Route>
+				</Switch>
 			</main>
 		</React.Fragment>
 	);
