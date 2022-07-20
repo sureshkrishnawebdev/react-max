@@ -1,4 +1,0 @@
-1. To use sass files in React
-    npm install sass
-
-2. 
