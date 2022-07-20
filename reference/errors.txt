@@ -1,0 +1,7 @@
+ROUTER 
+------
+1. Uncaught Error: Invariant failed: You should not use < Route> outside a < Router>
+------------------------------------------------------------------------------
+Cause: If we failed to activate the routes then it might lead to this issue
+Resolution: #Activate-the-route
+-------------------------------------------------------------------------------
