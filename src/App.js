@@ -5,10 +5,12 @@ import { Route } from 'react-router-dom';
 import Home from './pages/Home';
 import ExpenseTracker from './pages/ExpenseTracker';
 import FoodApp from './pages/FoodApp';
+import MainHeader from './components/Layout/MainHeader';
 
 function App() {
 	return (
 	  <Fragment>
+		  	<MainHeader />
 		<main>
 			<Route path="/home">
 				<Home />
