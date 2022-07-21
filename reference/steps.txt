@@ -3,3 +3,5 @@
     it consits of 4 main sections
     2.1. set up folder structure for main features - Meals, Cart, UI, Layout 
     2.2. Add components to Layout - Header, HeaderCartButton
+    2.3. Add components to Meals - MealSummary, Meals, MealList, MealItem, MealForm
+    2.4. UI - Cart(wrapper), 
