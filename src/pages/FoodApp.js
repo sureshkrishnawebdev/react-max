@@ -1,10 +1,12 @@
 import React, { Fragment } from 'react';
 
+// Component - Layout
+import Header from '../components/food-app/components/Layout/header/Header';
+
 const FoodApp = () => {
     return (
         <Fragment>
-            <h1> Welcome to my FoodApp Page </h1>
-            <p> Preparing your menus...  </p>
+            <Header />
         </Fragment>
     )
 }

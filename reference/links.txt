@@ -1,0 +1,5 @@
+1. Use font awesome icons in react
+    - https://www.freecodecamp.org/news/how-to-use-react-icons/
+    - npm install react-icons
+    - eg: import { FaCartPlus } from 'react-icons/fa';
+
