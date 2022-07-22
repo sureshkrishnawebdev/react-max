@@ -8,4 +8,6 @@
     2.5. Add components to Cart - Cart
         2.5.1. Pass contents from Cart to Modal - We're going to show contents of cart to modal
         2.5.2. Render Modal conditionally - when we click on cart icon in Header
+        2.5.3. Create Cart Context - to share meal data across application through multi level components
+
 

@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 
 // ------ Component ----------
 // Layout
@@ -6,6 +6,8 @@ import Header from "../components/food-app/components/Layout/header/Header";
 // Feature
 import Meals from "../components/food-app/components/Meals/meals/Meals";
 import Cart from "../components/food-app/components/Cart/cart/Cart";
+// Providers
+import CartProvider from "../components/food-app/store/cart/CartProvider";
 
 const FoodApp = () => {
 	let [isDisplayCart, setIsDisplayCart] = useState(false);
@@ -21,13 +23,13 @@ const FoodApp = () => {
 	};
 
 	return (
-		<Fragment>
+		<CartProvider>
 			<Header onDisplayCartHandler={displayCartHandler} />
 			{isDisplayCart && <Cart onHideCartHandler={hideCartHandler} />}
 			<main>
 				<Meals />
 			</main>
-		</Fragment>
+		</CartProvider>
 	);
 };
 
