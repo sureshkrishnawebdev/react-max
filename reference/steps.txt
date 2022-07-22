@@ -5,3 +5,7 @@
     2.2. Add components to Layout - Header, HeaderCartButton
     2.3. Add components to Meals - MealSummary, Meals, MealList, MealItem, MealForm
     2.4. UI - Cart(wrapper), Input(resuable), Modal(overlay)
+    2.5. Add components to Cart - Cart
+        2.5.1. Pass contents from Cart to Modal - We're going to show contents of cart to modal
+        2.5.2. Render Modal conditionally - when we click on cart icon in Header
+
