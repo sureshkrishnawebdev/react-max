@@ -8,6 +8,7 @@ import FoodApp from "./pages/FoodApp";
 import LibraryInfo from "./pages/LibraryInfo";
 // Components - Navigation
 import MainHeader from "./components/Layout/MainHeader";
+import NotFound from './pages/NotFound';
 
 function App() {
 	return (
@@ -29,6 +30,9 @@ function App() {
 					</Route>
 					<Route path="/library-info">
 						<LibraryInfo />
+					</Route>
+					<Route path="*">
+						<NotFound />
 					</Route>
 				</Switch>
 			</main>
