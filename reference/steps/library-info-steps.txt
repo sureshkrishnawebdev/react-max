@@ -1,0 +1,7 @@
+1. Create a library-info project to xplore react concepts
+    1.1. creating the basic route setup using routing concepts  
+    - route, switch, exact
+    - nested route, 
+    - hooks - useParam 
+    
+        
