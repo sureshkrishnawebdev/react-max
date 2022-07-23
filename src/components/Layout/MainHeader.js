@@ -17,6 +17,9 @@ const MainHeader1 = () => {
                     <li>
                         <NavLink  activeClassName={classes.active} to="/food-app"> FoodApp </NavLink>
                     </li>
+                    <li>
+                        <NavLink  activeClassName={classes.active} to="/library-info"> Library Info</NavLink>
+                    </li>
                 </ul>
             </nav>
         </header>
