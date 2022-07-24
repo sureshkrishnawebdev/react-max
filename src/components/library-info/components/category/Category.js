@@ -1,22 +1,23 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React from "react";
+import { useParams } from "react-router-dom";
 
 // Styles
-import classes from './Category.module.css'
-import Card from '../../UI/card/Card';
+import classes from "./Category.module.css";
+import Card from "../../UI/card/Card";
 
 const Category = () => {
+	console.log(`L4 - inside Category compt`);
 
-    const params = useParams();
-    console.log( params );
+	const params = useParams();
+	console.log(params);
 
-    return (
-        <Card>
-           <div className={classes.category}>
-                <h3> {JSON.stringify(params)} </h3>
-           </div>
-        </Card>
-    )
-}
+	return (
+		<Card>
+			<div className={classes.category}>
+				<h3> {JSON.stringify(params)} </h3>
+			</div>
+		</Card>
+	);
+};
 
 export default Category;

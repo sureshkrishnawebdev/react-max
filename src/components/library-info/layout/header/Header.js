@@ -1,39 +1,64 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 
 // Styles
 import classes from "./Header.module.css";
 
-const Header = () => {
-	return (
-		<header className={classes.header}>
-			<nav>
-				<ul>
-					<li>
-						<NavLink activeClassName={classes.active} to="/library-info/basic">
-							Basic
-						</NavLink>
-					</li>
-					<li>
-						<NavLink
-							activeClassName={classes.active}
-							to="/library-info/intermediate"
-						>
-							Intermediate
-						</NavLink>
-					</li>
-					<li>
-						<NavLink
-							activeClassName={classes.active}
-							to="/library-info/advanced"
-						>
-							Advanced
-						</NavLink>
-					</li>
-				</ul>
-			</nav>
-		</header>
+const Header = (props) => {
+	console.log(`L3 - inside Header compt`);
+
+	let content = (
+		<Fragment>
+			<h2> LibraryInfo </h2>
+			<div className={classes.actions}>
+				<button className="btn" onClick={props.onLoginHandler}>
+					Login
+				</button>
+			</div>
+		</Fragment>
 	);
+
+	if (props.isAuthenticated) {
+		content = (
+			<Fragment>
+				<nav>
+					<ul>
+						<li>
+							<NavLink
+								activeClassName={classes.active}
+								to="/library-info/basic"
+							>
+								Basic
+							</NavLink>
+						</li>
+						<li>
+							<NavLink
+								activeClassName={classes.active}
+								to="/library-info/intermediate"
+							>
+								Intermediate
+							</NavLink>
+						</li>
+						<li>
+							<NavLink
+								activeClassName={classes.active}
+								to="/library-info/advanced"
+							>
+								Advanced
+							</NavLink>
+						</li>
+					</ul>
+				</nav>
+				<div className={classes.actions}>
+					<button className="btn" onClick={props.onLogoutHandler}>
+						Logout
+					</button>
+				</div>
+			</Fragment>
+		);
+	}
+
+	return <header className={classes.header}>{content}</header>;
 };
 
 export default Header;

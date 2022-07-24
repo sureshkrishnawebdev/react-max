@@ -8,9 +8,10 @@ import FoodApp from "./pages/FoodApp";
 import LibraryInfo from "./pages/LibraryInfo";
 // Components - Navigation
 import MainHeader from "./components/Layout/MainHeader";
-import NotFound from './pages/NotFound';
+import NotFound from "./pages/NotFound";
 
 function App() {
+	console.log(`L1 - inside App compt`);
 	return (
 		<Fragment>
 			<MainHeader />
