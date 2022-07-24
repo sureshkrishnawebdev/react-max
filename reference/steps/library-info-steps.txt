@@ -3,5 +3,11 @@
     - route, switch, exact
     - nested route, 
     - hooks - useParam 
+
+    1.2. Implementing basic login and logout functionality
+    - hooks 
+        - useState - to toggle loggedin state + render contents conditionally
+        - useHistory - to redirect post logout
+        - useEffect - with empty dependency - to persist loggedIn state even on reload
     
         
