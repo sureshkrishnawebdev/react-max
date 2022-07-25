@@ -8,7 +8,7 @@ import AuthContext from '../../store/auth-context/auth-context';
 import classes from "./Header.module.css";
 
 const Header = () => {
-	console.log(`L3 - inside Header compt`);
+	console.log(`L4 - inside Header compt`);
 
 	const authCtx = useContext(AuthContext);
 

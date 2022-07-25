@@ -13,6 +13,10 @@
     1.3. Implementing context for authentication
         - hooks 
             - useContext - used to obtain loggedIn state from store across application instead of prop chaining
-            
+        - component
+            -refactoring: authentication state in single file 
+                -lifting the logic(state, eventHandlers) to the  provider component 
+                - removing the unwanted code from main file(library-info.js) to have lean components
+                
     
         
