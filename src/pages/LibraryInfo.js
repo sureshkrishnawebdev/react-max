@@ -7,6 +7,9 @@ import Header from "../components/library-info/layout/header/Header";
 // Functional
 import Category from "../components/library-info/components/category/Category";
 
+// context
+import AuthContext from "../components/library-info/store/auth-context/auth-context";
+
 const LibraryInfo = () => {
 	console.log(`L2 - inside LibraryInfo compt`);
 
@@ -43,18 +46,28 @@ const LibraryInfo = () => {
 
 	return (
 		<Fragment>
-			<Header
-				isAuthenticated={isLoggedIn}
-				onLoginHandler={loginHandler}
-				onLogoutHandler={logoutHandler}
-			/>
-			<main>
-				<Switch>
-					<Route path="/library-info/:category">
-						<Category />
-					</Route>
-				</Switch>
-			</main>
+			<AuthContext.Provider
+				value={{
+					isLoggedIn: isLoggedIn,
+					onLogin: loginHandler,
+					onLogout: logoutHandler,
+				}}
+			>
+						<Header
+					// isAuthenticated={isLoggedIn}
+					// onLoginHandler={loginHandler}
+					// onLogoutHandler={logoutHandler}
+					/>
+
+					<main>
+						<Switch>
+							<Route path="/library-info/:category">
+								<Category />
+							</Route>
+						</Switch>
+					</main>
+
+			</AuthContext.Provider>
 		</Fragment>
 	);
 };
