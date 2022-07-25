@@ -9,5 +9,14 @@
         - useState - to toggle loggedin state + render contents conditionally
         - useHistory - to redirect post logout
         - useEffect - with empty dependency - to persist loggedIn state even on reload
+
+    1.3. Implementing context for authentication
+       1 - hooks 
+            - useContext - used to obtain loggedIn state from store across application instead of prop chaining
+       2 - component
+            -refactoring: authentication state in single file 
+                -lifting the logic(state, eventHandlers) to the  provider component 
+                - removing the unwanted code from main file(library-info.js) to have lean components
+                
     
         
