@@ -2,7 +2,7 @@ import React, { Fragment, useContext } from "react";
 import { NavLink } from "react-router-dom";
 
 // Context
-import AuthContext from '../../store/auth-context/auth-context';
+import AuthContext from "../../store/auth-context/auth-context";
 
 // Styles
 import classes from "./Header.module.css";
