@@ -17,6 +17,11 @@
             -refactoring: authentication state in single file 
                 -lifting the logic(state, eventHandlers) to the  provider component 
                 - removing the unwanted code from main file(library-info.js) to have lean components
+
+    1.4. Implementing Memo concepts
+        1 - React.Memo
+            - to avoid re-rendering of unwanted component whose prop is of 'primitive type'
+      
                 
     
         
