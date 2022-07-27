@@ -1,0 +1,20 @@
+.update {
+    background-color: white;
+}
+
+.update__info {
+    display: inline-block;
+    color: rgb(233, 84, 15);
+    animation: moveIn 10s ease-in-out 20;
+}
+
+@keyframes moveIn {
+    0%{
+        opacity: 0;
+        transform: translateX(99vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

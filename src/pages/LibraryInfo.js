@@ -6,6 +6,7 @@ import { Route, Switch } from "react-router-dom";
 import Header from "../components/library-info/layout/header/Header";
 // Functional
 import Category from "../components/library-info/components/category/Category";
+import Updates from '../components/library-info/components/update/Updates';
 
 // context
 import AuthProvider from "../components/library-info/store/auth-context/AuthProvider";
@@ -24,6 +25,8 @@ const LibraryInfo = () => {
 							<Category />
 						</Route>
 					</Switch>
+
+					<Updates />
 				</main>
 			</AuthProvider>
 		</Fragment>
